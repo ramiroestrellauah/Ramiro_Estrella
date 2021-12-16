@@ -1,0 +1,10 @@
+	int medidasfijas=25;
+	int medidasdesensores=0;
+
+	mdt=Medidasdesensores();
+
+	if(medidasdesensores>medidasfijas){
+	  do{
+		Modificacionesdevariaciones();
+	  }while(medidasfijas>Medidasdesensores)
+	}
