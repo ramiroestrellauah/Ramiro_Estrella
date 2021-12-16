@@ -8,3 +8,28 @@
 		Modificacionesdevariaciones();
 	  }while(medidasfijas>Medidasdesensores)
 	}
+
+while not 0<= numeroIntroducido <= 99:
+numeroIntroducido = input("Por favor, introduce un número entre el 0 y el 99: ")
+try:
+numeroIntroducido = int (numeroIntroducido)
+except:
+print("La conversión del número para identificar el rango ha fallado....")
+
+numeroIntroducido = input("Teclea el número en el 0 y el 99: ")
+try:
+numeroIntroducido = int (numeroIntroducido)
+except:
+print("La conversión del número inicial ha fallado....")
+
+while numeroAleatorio != numeroIntroducido:
+if numeroIntroducido < numeroAleatorio :
+numeroIntroducido = input("FALLO!, prueba un valor más alto... :")
+intentos += 1
+try:
+numeroIntroducido = int (numeroIntroducido)
+except:
+print("La conversión del número introducido ha fallado....")
+else:
+numeroIntroducido = input("FALLO!, prueba un valor más bajo... :")
+intentos += 1
